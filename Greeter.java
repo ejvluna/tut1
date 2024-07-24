@@ -13,7 +13,7 @@ public class Greeter {
 
   public String sayHello() {
     ResourceBundle messages = ResourceBundle.getBundle("MessagesBundle", locale);
-    return messages.getString("greeting") + ", " + name;
+    return messages.getString("greeting") + ", " + name +" "; // Change line number 16: ‘name;’ to ‘`name;' to `" "+name+" ";'
   }
 
   public static void main(String[] args) {
